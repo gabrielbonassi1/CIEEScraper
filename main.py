@@ -12,15 +12,6 @@ import pandas as pd
 import os
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://portal.ciee.org.br/para-voce/vagas/")
-# criando uma instancia do webdriver, passando o url do ciee pra ele e mandando ele ficar aberto
-#def launchBrowser():
-   # inserindo a url de interesse
-#   url = "https://portal.ciee.org.br/para-voce/vagas/"
-   # abrindo a url
-#   driver.get(url)
-#   while(True):
-#       pass
-#launchBrowser()
 
 # selecionar o dropdown de estados
 select_estado = Select(driver.find_element(By.CLASS_NAME, "option-estado"))
